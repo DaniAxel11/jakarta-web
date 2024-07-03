@@ -10,3 +10,15 @@
 .img-thumbnail:hover {
     opacity: 0.8;
 }
+
+/* Cambiar el fondo del modal */
+.modal-content{
+    background-color: #fce8b1;; /* Cambia este color al que desees */
+}
+.btn-outline-primary {
+    background-color: #cba836; /* Cambia este color al que desees */
+    border-color: #000000; /* Cambia este color al que desees */
+    color: #000000;
+    border-radius: 50px; /* Añade un borde redondeado para el estilo "pill" */
+    padding: 0.5rem 1rem;
+  }

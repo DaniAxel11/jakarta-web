@@ -1,14 +1,17 @@
-.sidebar a {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  transition: background-color 0.3s;
+.sidebar .item:hover {
+  background-color: #d2d2d2; /* Color de fondo al pasar el ratón */
 }
 
-.sidebar a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.sidebar .material-icons {
+  color: #000000; 
 }
 
-.material-icons {
-  font-size: 24px;
+.mt-auto {
+  margin-top: auto;
 }
+
+.sidebar .item .active {
+  background-color: #cba836;
+  color: white;
+}
+

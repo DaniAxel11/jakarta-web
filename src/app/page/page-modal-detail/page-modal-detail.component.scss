@@ -1,0 +1,27 @@
+/* custom.css */
+
+/* Cambiar el fondo del modal */
+.modal-content {
+    background-color: #fce8b1;; /* Cambia este color al que desees */
+}
+
+/* Opcional: Cambiar el color del texto en el modal */
+.modal-content .modal-title,
+.modal-content .modal-body,
+.modal-content .form-label {
+    color: #343a40; /* Cambia este color al que desees */
+
+}
+
+/* Opcional: Cambiar el fondo del header y footer del modal */
+.modal-header,
+.modal-footer,
+.modal-body {
+    background-color: #Fce8b1;; /* Cambia este color al que desees */
+}
+
+/* Opcional: Cambiar el color del texto en el header y footer del modal */
+.modal-header .modal-title,
+.modal-footer .btn {
+    color: #343a40; /* Cambia este color al que desees */
+}

@@ -1,0 +1,49 @@
+<div class="modal-header">
+    <h5 class="modal-title">Detalles del Platillo</h5>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+</div>
+<div class="modal-body">
+
+    <form (ngSubmit)="submitForm()" #dishForm="ngForm">
+        <div class="row mb-5">
+            <div class="col-6">
+                <!-- Imagen seleccionada -->
+                <div class="text-center mt-3">
+                    <img [src]="dish.imageUrl" class="img-fluid" style="width: 200px; height: 300px;">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="dishName" class="form-label">Nombre del Platillo</label>
+                    <input type="text" id="dishName" class="form-control" [(ngModel)]="dish.name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="ingredients" class="form-label">Ingredientes</label>
+                    <textarea id="ingredients" class="form-control" [(ngModel)]="dish.ingredients" name="ingredients"
+                        rows="3" required></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="grams" class="form-label">Gramos</label>
+                            <input type="number" id="grams" class="form-control" [(ngModel)]="dish.grams" name="grams"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="kilocalories" class="form-label">Kilocalorías</label>
+                            <input type="number" id="kilocalories" class="form-control" [(ngModel)]="dish.kilocalories"
+                                name="kilocalories" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Guardar Platillo</button>
+            </div>
+        </div>
+    </form>
+</div>

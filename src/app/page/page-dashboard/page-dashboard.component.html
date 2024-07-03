@@ -1,7 +1,8 @@
 <div class="row mt-5 mx-4">
 
+    <h2 class="mb-5">Inventario</h2>
     <div class="col-1 d-flex justify-content-center" *ngFor="let dish of dishes">
-        <img [src]="dish.imageUrl" class="w-100 btn-image" alt="Imagen del platillo">
+        <img [src]="dish.imageUrl" class="w-100 btn-image" alt="Imagen del platillo" (click)="showModal(dish)">
     </div>
 
     <div class="col-1 d-flex justify-content-center">

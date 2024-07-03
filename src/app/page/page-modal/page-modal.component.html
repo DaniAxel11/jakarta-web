@@ -7,7 +7,7 @@
             </div>
             <div class="modal-body">
                 <!-- Formulario -->
-                <form (ngSubmit)="submitForm()" #dishForm="ngForm">
+                <form #dishForm="ngForm">
 
                     <div class="row mb-5">
                         <div class="col-6">
@@ -71,7 +71,7 @@
 
                     <div class="row mt-5">
                         <div class="col d-flex justify-content-end">
-                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Guardar Platillo</button>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close" (click)="submitForm()">Guardar Platillo</button>
                         </div>
                     </div>
                 </form>

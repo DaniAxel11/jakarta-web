@@ -6,6 +6,9 @@ import { PageSidebarComponent } from './page-sidebar/page-sidebar.component';
 import { PageDashboardComponent } from './page-dashboard/page-dashboard.component';
 import { PageModalComponent } from './page-modal/page-modal.component';
 import { FormsModule } from '@angular/forms';
+import { PageModalDetailComponent } from './page-modal-detail/page-modal-detail.component';
+import { PageProfileComponent } from './page-profile/page-profile.component';
+import { PageWelcomeComponent } from './page-welcome/page-welcome.component';
 
 
 
@@ -14,7 +17,10 @@ import { FormsModule } from '@angular/forms';
     PageContainerComponent,
     PageSidebarComponent,
     PageDashboardComponent,
-    PageModalComponent
+    PageModalComponent,
+    PageModalDetailComponent,
+    PageProfileComponent,
+    PageWelcomeComponent
   ],
   imports: [
     CommonModule,

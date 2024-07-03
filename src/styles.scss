@@ -2,5 +2,19 @@ body {
     background-color: #deedea; /* Color de fondo deseado */
     margin: 0; /* Asegura que no haya márgenes externos */
     padding: 0; /* Asegura que no haya relleno interno */
+
+
+    .btn-primary {
+      background-color: #cba836; /* Cambia este color al que desees */
+      border-color: #000000; /* Cambia este color al que desees */
+      color: #000000;
+      border-radius: 50px; /* Añade un borde redondeado para el estilo "pill" */
+      padding: 0.5rem 1rem;
+    }
   }
   
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+
+

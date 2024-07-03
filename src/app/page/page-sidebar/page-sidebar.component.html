@@ -1,20 +1,32 @@
-<div class="sidebar vh-100 d-flex flex-column">
-    <a href="#" class="text-white text-decoration-none p-3 d-flex align-items-center">
-        <span class="material-icons me-2">home</span> Mi perfil
-    </a>
-    <a href="#" class="text-white text-decoration-none p-3 d-flex align-items-center">
-        <span class="material-icons me-2">person</span> Usuario
-    </a>
-    <a [routerLink]="'/inventario'" class="text-white text-decoration-none p-3 d-flex align-items-center">
-        <span class="material-icons me-2">mail</span> Inventario
-    </a>
-    <a href="#" class="text-white text-decoration-none p-3 d-flex align-items-center">
-        <span class="material-icons me-2">settings</span> Menu
-    </a>
-    <a href="#" class="text-white text-decoration-none p-3 d-flex align-items-center">
-        <span class="material-icons me-2">logout</span> Ajustes
-    </a>
-    <a href="#" class="text-white text-decoration-none p-3 d-flex align-items-center">
-        <span class="material-icons me-2">logout</span> Logout
-    </a>
+<div class="sidebar vh-100 d-flex flex-column align-items-center">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center item">
+            <a [routerLink]="['/welcome']" routerLinkActive="active" class="text-decoration-none p-3 d-flex align-items-center">
+                <span class="material-icons" style="font-size: 32px;">home</span>
+            </a>
+        </div>
+        <div class="col-12 d-flex justify-content-center item">
+            <a [routerLink]="['/profile']" routerLinkActive="active" class="text-center text-decoration-none p-3 d-flex align-items-center">
+                <span class="material-icons" style="font-size: 32px;">person</span>
+            </a>
+        </div>
+        <div class="col-12 d-flex justify-content-center item">
+            <a [routerLink]="['/inventario']" routerLinkActive="active" class="text-center text-decoration-none p-3 d-flex align-items-center">
+                <span class="material-icons" style="font-size: 32px;">mail</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="row mt-auto">
+        <div class="col-12 d-flex justify-content-center item">
+            <a [routerLink]="['/menu']" class="text-center text-decoration-none p-3 d-flex align-items-center">
+                <span class="material-icons" style="font-size: 32px;">settings</span>
+            </a>
+        </div>
+        <div class="col-12 d-flex justify-content-center item">
+            <a [routerLink]="['/']" class="text-white text-decoration-none p-3 d-flex align-items-center">
+                <span class="material-icons" style="font-size: 32px;">logout</span>
+            </a>
+        </div>
+    </div>   
 </div>

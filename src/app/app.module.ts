@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PageModule } from './page/page.module';
 import { LoginModule } from './login/login.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoginModule } from './login/login.module';
     ReactiveFormsModule,
     FormsModule, // Asegúrate de importar FormsModule aquí
     PageModule,
-    LoginModule
+    LoginModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

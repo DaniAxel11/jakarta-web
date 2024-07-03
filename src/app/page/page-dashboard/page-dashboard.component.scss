@@ -1,23 +1,20 @@
 .btn-image {
-    border: 2px solid #007bff; /* Borde azul */
-    border-radius: 0.375rem; /* Bordes redondeados */
-    padding: 0; /* Eliminar el padding predeterminado */
-    background-color: #f8f9fa; /* Color de fondo claro */
-    transition: all 0.3s ease; /* Transición suave para efectos de hover */
-    cursor: pointer;
+  border: 2px solid #Fce8b1;
+  border-radius: 0.375rem;
+  padding: 0;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+  cursor: pointer;
 
-    /* Estilo cuando el mouse está sobre la imagen */
-    &:hover {
-      background-color: #007bff; /* Color de fondo azul */
-      border-color: #0056b3; /* Borde azul oscuro */
-      color: #fff; /* Texto blanco */
-      opacity: 0.8; /* Ligera opacidad */
-    }
-  
-    /* Estilo cuando la imagen está activa */
-    &:active {
-      background-color: #0056b3; /* Fondo azul oscuro */
-      border-color: #003d7a; /* Borde azul muy oscuro */
-    }
+  &:hover {
+    background-color: #Fce8b1;
+    border-color: #Fce8b1;
+    color: #fff;
+    opacity: 0.8;
   }
-  
+
+  &:active {
+    background-color: #Fce8b1;
+    border-color: #Fce8b1;
+  }
+}
