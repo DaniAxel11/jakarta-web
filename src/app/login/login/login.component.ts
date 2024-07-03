@@ -19,7 +19,6 @@ export class LoginComponent {
     // Simulación de autenticación
     if (this.usuario === 'admin' && this.password === 'admin') {
       console.log('Acceso concedido al administrador');
-      // Redirigir al usuario a la página deseada
       this.router.navigate(['/inventario']);
     } else {
       console.log('Credenciales incorrectas');
