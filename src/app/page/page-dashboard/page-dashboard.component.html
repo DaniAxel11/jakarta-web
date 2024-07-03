@@ -1,0 +1,16 @@
+<div class="row mt-5 mx-4">
+
+    <div class="col-1 d-flex justify-content-center" *ngFor="let dish of dishes">
+        <img [src]="dish.imageUrl" class="w-100 btn-image" alt="Imagen del platillo">
+    </div>
+
+    <div class="col-1 d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            <img src="assets/img/agregar.png" class="button-image w-100">
+        </button>
+    </div>
+
+</div>
+
+<app-page-modal (formSubmit)="handleFormSubmit($event)"></app-page-modal>

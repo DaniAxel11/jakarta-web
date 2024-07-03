@@ -1,0 +1,81 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Formulario de Platillo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulario -->
+                <form (ngSubmit)="submitForm()" #dishForm="ngForm">
+
+                    <div class="row mb-5">
+                        <div class="col-6">
+
+                            <!-- Sección para mostrar las imágenes -->
+                            <div class="row mt-3">
+
+                                <div class="col-12">
+                                    <button class="btn btn-outline-primary w-100 mb-2" (click)="selectImage('assets/img/comida/hamburguesa.jpeg')">Hamburguesa</button>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-outline-primary w-100 mb-2" (click)="selectImage('assets/img/comida/tacos.jpeg')">Tacos</button>
+                                </div> 
+                                <div class="col-12">
+                                    <button class="btn btn-outline-primary w-100 mb-2" (click)="selectImage('assets/img/comida/pozole.jpeg')">Pozole</button>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-outline-primary w-100 mb-2" (click)="selectImage('assets/img/comida/tamales.jpeg')">Tamales</button>
+                                </div>
+                            </div>
+
+                            <!-- Imagen seleccionada -->
+                            <div class="text-center mt-3">
+                                <img [src]="selectedImage" class="img-fluid" *ngIf="selectedImage" style="width: 120px; height: 120px;">
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+
+                            <div class="mb-3">
+                                <label for="dishName" class="form-label">Nombre del Platillo</label>
+                                <input type="text" id="dishName" class="form-control" [(ngModel)]="dish.name"
+                                    name="name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ingredients" class="form-label">Ingredientes</label>
+                                <textarea id="ingredients" class="form-control" [(ngModel)]="dish.ingredients"
+                                    name="ingredients" rows="3" required></textarea>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="grams" class="form-label">Gramos</label>
+                                        <input type="number" id="grams" class="form-control" [(ngModel)]="dish.grams"
+                                            name="grams" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="kilocalories" class="form-label">Kilocalorías</label>
+                                        <input type="number" id="kilocalories" class="form-control"
+                                            [(ngModel)]="dish.kilocalories" name="kilocalories" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Guardar Platillo</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
